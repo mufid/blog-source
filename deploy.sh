@@ -11,6 +11,10 @@ bundle exec rake generate
 rm -rf gh/blog
 cp -r public/* gh
 cd gh
+
+git config user.name "Mufid - Codeship Deployer"
+git config user.email "mufid@outlook.com"
+
 git add .
 git commit -m "site updated at $(date)"
 git push origin master
