@@ -4,6 +4,8 @@ title: "Meretas Gojek"
 date: 2016-08-06 06:41
 comments: true
 categories: 
+published: false
+publish: false
 ---
 
 Kisah berawal dari adanya "paket nyasar" ke saya
