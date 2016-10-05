@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: http://google.com/search
+url: http://mufid.github.io
+title: Mufid's Code blog
+subtitle:
+author: Mufid
+simple_search: https://google.com/search
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -26,10 +26,10 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /
-permalink: /blog/:year/:month/:day/:title/
+root: /blog
+permalink: /:year/:title/
 source: source
-destination: public
+destination: public/blog
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
@@ -42,11 +42,11 @@ rdiscount:
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+pagination_dir:   # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
-titlecase: true       # Converts page and post titles to titlecase
+titlecase: false       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -86,15 +86,15 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
-delicious_count: 3
+delicious_user: the_cruiser
+delicious_count: 15
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: fidblog
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-61504096-1
 
 # Facebook Like
 facebook_like: false
