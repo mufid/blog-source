@@ -1,6 +1,7 @@
 #!/bin/sh
 
 if [ -d "gh" ]; then
+  echo 'Continuing..'
 else
   git clone git@github.com:mufid/mufid.github.com.git gh
 fi
