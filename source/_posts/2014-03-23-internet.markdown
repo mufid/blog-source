@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Internet dan Privasi"
+date: 2014-03-23 11:04
+comments: true
+categories:
+lang: id
+---
+
+Yay, akhirnya setelah sekian lama enggak nulis, kita bisa nulis lagi :D
+
+Kali ini adalah tentang internet dan privasi. Secara umum, terkait privasi, kita bisa membagi manusia menjadi dua golongan.
+
+Golongan pertama adalah yang mendukung informasi publik Anda di internet. Anda saat mendaftar Google+ dan Facebook diminta untuk memberikan identitas asli kan? Golongan kedua adalah yang mendukung informasi di internet harus anonim. Contohnya saat Anda mendaftar Kaskus atau forum-forum, pada umumnya Anda tidak diminta memasukkan nama asli dan identitas-identitas pribadi Anda (kecuali email).
+
+Saya termasuk pribadi yang mendukung golongan kedua dan saya memiliki alasan kenapa saya mendukung golongan kedua.
+
+Di Indonesia, masih terlalu banyak orang yang tidak merasa data pribadinya tidak penting. Padahal, bukankah dari kecil kita sudah diajarkan oleh orang tua kita untuk tidak memberikan alamat rumah dan nomor telepon kepada orang yang tidak kita kenal? Sekarang, kenapa kita mudah sekali memberikan data kita ke sebuah layanan yang bahkan Anda sendiri tidak tahu bagaimana data itu disimpan?
+
+*Think again.*

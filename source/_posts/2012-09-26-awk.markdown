@@ -1,0 +1,91 @@
+---
+layout: post
+title: "AWK, oh AWK"
+date: 2012-09-26 18:50
+comments: true
+categories: linux, bash
+---
+
+![Gambar](/images/post/mingw.png)
+
+Kali ini kita membahas bash!
+
+Baiklah tadi kita kuliah sysprog. Tapi sebelumnya pak Adin pernah ngomong ini
+
+> Ini sebenarnya mah gak perlu kuliah, wong bisa baca-baca di internet.. (informasinya gak perlu baca yang ada di buku -red)
+
+<!-- more -->
+
+*and yeah,* perkataan itu ada benarnya.
+
+Saya melakukan ini di bash. Yuk kita lihat.
+
+Saya punya berkas ini
+
+	Mufid@FIDZMOBILE ~/tes
+	$ cat lorem.txt
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Di kuliah sysprog tadi, saya dikenalkan beberapa perintah yang common sense, yang semua pengguna unix pasti paham:
+
+- `pipe (a | b)` memberikan hasil output dari perintah a ke perintah b.
+- `wc` untuk word count. Tetapi juga bisa character cound dan line count.
+- `head` dan `tail` untuk mengambil beberapa bagian pertama atau beberapa bagian terakhir. Kombinasinya bisa mengeluarkan hanya baris dengan offset dan limit.
+
+See? Sekarang berkenalan dengan AWK. Auch! Makhluk macam apa ini! Kenapa bisa ada sintaks dalam sintaks! Menyulitkan saja.
+
+Ternyata tidak seperti yang saya pikirkan. AWK ini memiliki sintaks umum. Seperti biasa, [] adalah opsional.
+
+	[BEGIN { perintah1; perintah2; ... }] #baris1
+	[{ perintah1; perintah2; ... }]       #baris2
+	[END { perintah1; perintah2; ...}]    #baris3
+
+setiap baris adalah opsional. Tetapi Yang paling make sense adalah baris2.
+
+Coba perhatikan contoh berikut:
+
+	Mufid@FIDZMOBILE ~/tes
+	$ awk '{print $1;}' lorem.txt
+	Lorem
+	tempor
+	quis
+	consequat.
+	cillum
+	proident,
+
+	Mufid@FIDZMOBILE ~/tes
+	$ awk '{print $2;}' lorem.txt
+	ipsum
+	incididunt
+	nostrud
+	Duis
+	dolore
+	sunt
+
+	Mufid@FIDZMOBILE ~/tes
+	$ awk '{print $3;}' lorem.txt
+	dolor
+	ut
+	exercitation
+	aute
+	eu
+	in
+
+Sudah mulai kelihatan?
+
+Jadi pada dasarnya di awk itu juga ada perintah seperti print dan sub (perintah lengkap dapat Anda baca di <http://www.grymoire.com/Unix/Awk.html> atau seperti biasa `man awk`). Pada dasarnya AWK akan melakukan ini:
+
+	1. Membaca dan menjalankan di dalam {} yang didahului dengan `begin`, jika ada
+	2. Membaca setiap baris dan menjalankan di antara {} yang tidak didahului dengan `begin`, jika ada
+	3. Setelah selesai, mengeksekusi perintah di antara {} yang didahului dengan end, jika ada
+
+Kemudian, setiap barisnya bisa dimodifikasi. Selain itu, Anda bisa memasukkan variabel sendiri di sini. Ya, seperti scripting pada umumnya. Adapun $n akan menampilkan kolom ke-n yang mana kolom itu dipisahkan oleh spasi (by default), dan jika n = 0 akan dikembalikan keseluruhan baris tersebut.
+
+Terlalu abstrak?
+
+Silahkan coba sendiri dan rasakan sensasinya :D

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Achieve"
+date: 2013-05-31 08:47
+comments: true
+categories: 
+---
+
+{% youtube 0uaquGZKx_0 %}
+
+> when you find your passion, you are unstoppable
+> you can make amazing things happen
+> it's been proven true
+
+...
+
+> .. who will get out of bed one morning and say
+> "you know what i think i can build a space
+> zone". I think that if we become afraid to take these
+> great big risks, we stop inspiring
+
+Yeah!

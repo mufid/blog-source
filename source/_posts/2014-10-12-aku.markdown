@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Aku"
+date: 2014-10-12 12:41
+comments: true
+categories:
+lang: id
+---
+
+*My lovely country is indeed awesome!*
+
+![](/images/post/indonesia-lang.jpg)
+
+[Source](https://www.facebook.com/Languages.Alino1/photos/a.320819614683664.71044.318757448223214/670023456429943/?type=1&theater)
+[More](http://www.latg.org/2014/09/indonesian-language.html)

@@ -1,0 +1,19 @@
+---
+layout: post
+title: "chmod dan 500 Internal Server Error"
+date: 2013-02-21 04:47
+comments: true
+categories:
+lang: id
+---
+
+Untuk alasan keamanan, beberapa web server tidak
+mengizinkan permission eXecute ditampilkan oleh
+client. Maka dari itu yang harus dilakukan:
+
+	find /path/to/base/dir -type d -print0 | xargs -0 chmod 755
+	find /path/to/base/dir -type f -print0 | xargs -0 chmod 644
+
+Begitu saja #selfnote.
+
+[sumber](http://superuser.com/questions/91935/how-to-chmod-755-all-directories-but-no-file-recursively)

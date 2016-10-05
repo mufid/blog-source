@@ -1,0 +1,24 @@
+---
+layout: post
+title: "I am Looking for Internship"
+date: 2013-03-26 07:55
+comments: true
+categories: 
+---
+
+Update: Thanks [IceHouse] for giving me opportunity to have great work! :D
+
+I am Muhammad Mufid Afif. Currently i am third year student in Faculty of <F24>Computer Science.
+
+I love to do hacks. See my [Github] for my latest hacks. I love hacks in PHP and Rails. I love user interface design, though i am not master in design.
+
+I am looking for intern this summer as part of my graduation prerequisites. I will do my best intern with my best attidude and surely i will do great hacks. I am living in Indonesia, but i am able to go abroad if needed.
+
+Please kindly contact me at mufid.afif[at]gmail[dot]com.
+
+Thank you very much,
+
+Mufid
+
+[Github]: https://github.com/mufid
+[IceHouse]: http://turbo2010.wordpress.com/2013/06/24/kerja-praktik-di-pt-ice-house-cari-dapat-nyaris-telat-dan-jatuh-cinta/

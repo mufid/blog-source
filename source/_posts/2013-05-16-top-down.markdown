@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Top Down, Bottom Up?"
+date: 2013-05-16 06:47
+comments: true
+categories: thoughts
+lang: id
+---
+
+Pendekatan bisnis antara dua hal ini:
+dari atas dulu atau dari bawah dulu?
+
+Dalam banyak kasus, keduanya bisa saja berhasil. Akan tetapi,
+mari kita lihat beberapa studi kasus terlebih dahulu. Kita
+coba lihat kang Onno.
+
+<!-- more -->
+
+## Linux dan Kang Onno
+
+Kang Onno membangun komunitas linux dari bawah. Kang Onno
+masuk ke SMK-SMK, membuat workshop, membuat ITCamp, dan hal-hal
+lain (yang saya tahu hanya sebatas ini). Saya sempat mengikuti
+workshop untuk anak SMK kang Onno dulu, sekitar 6 tahun yang lalu.
+Acaranya mengundang banyak anak SMK (mungkin saya satu-satunya dari
+SMA). Menurut Saya workshopnya kurang berhasil membahas secara
+mendetail, tetapi Saya suka sekali bagaimana kang Onno berhasil
+menggaet komunitas.
+
+Jika kang Onno ingin membuat gerakan yang lebih masif, tentu kang
+Onno bisa dengan mudah masuk ke pemerintahan. Tetapi kang Onno
+tidak ingin (meskipun kang Onno kenal dengan banyak orang dalam
+pemerintahan di sana). Hal ini saya dengar sendiri langsung dari
+kang Onno saat ITCamp dua tahun yang lalu.
+
+Sekarang mari kita lihat beberapa gerakan Top-Down. Kita lihat
+contoh AnakUI.com dan Videoku.TV. Kita mulai dari yang terakhir
+terlebih dahulu.
+
+## Videoku.TV
+
+Pernah dengar Videoku.TV? Baiklah, jangan melakukan penelusuran
+Google. Anda tidak akan menemukannya karena sekarang sudah down.
+
+Videoku.TV adalah layanan hosted video sharing. Persis seperti
+YouTube, tapi dengan konten-konten lokal. Anda dapat mengunggah
+konten apapun ke Videoku.TV.
+
+Terdengar menarik?
+
+Tidak.
+
+Apa diferensiasi Videoku.TV dengan Youtube?
+
+Akan tetapi saya melihat hal yang lebih krusial lagi: Untuk
+apa membuat Videoku.TV? Apakah *demand* masyarakat internet
+Indonesia untuk video streaming sudah seperti Korea, Jepang,
+atau Singapura?
+
+Internet kabel sendiri saya rasa sudah cukup cepat, tetapi
+kesiapan masyarakat Indonesia terhadap *demand* ini seperti
+cerita yang berbeda.
+
+*Oh, well... dari awal saya sudah yakin target Videoku.TV
+sudah salah*. Tapi itu bukan satu-satunya concern saya
+tentang Top Down Approach.
+
+Mereka memulai terlalu besar: mengajak artis
+untuk masuk dan membuat akun di Videoku.TV. Selain itu,
+Videoku.TV pada akhirnya sebagian besar berisi
+video-video gosip selebriti. Menurut Saya, menargetkan
+gosip untuk masyarakat internet Indonesia sepertinya bukan
+langkah yang tepat, mengingat pada awalnya internet Indonesia
+digunakan untuk akademisi, dan sebagian masyarakat yang lain
+belum tersentuh internet (atau bahkan belum mengenal).
+
+Nah, they shut down now. More services shutdown.
+
+Oh sebelum berganti topik, Saya sering sekali terkena spam
+dari Videoku. Seems they're not digging into security.
+
+![spam](/images/post/spam.png)
+
+

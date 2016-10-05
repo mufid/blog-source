@@ -1,0 +1,99 @@
+---
+layout: post
+title: Having Fun with Java's Null
+date: 2015-04-23 20:52
+comments: true
+categories: 
+lang: en
+---
+
+So lately i have been diving really deep (or not really) into Java. I found Java's null is interesting. I think, i hate `NullPointerException` very much. And most of the time, i hate my own way to deal with those things.
+
+Btw, if you hate compiling Java's code just to test a one-line command, you may use [JavaRepl], which will give you an interactive mode of Java compiler.
+
+## String Concatenation
+
+This is interesting. If you run
+
+    String result = object + " is cool";
+
+will invoke `toString` of the object **only if the object is not null**. If the object is null, `toString` will not be invoked and it will be replaced with `null` instead
+
+    String result = new Object() + " is cool";
+    java.lang.Object@55c8a526 is cool
+    
+    String result = new Object().toString() + " is cool";
+    java.lang.Object@55c8a526 is cool
+    
+    String result = null + " is cool";
+    null is cool
+
+But, you can't really invoke toString :))
+
+    Object o = null;
+    String result = o.toString() + " is cool";
+    java.lang.NullPointerException
+
+## Object Unboxing
+
+Well, since my code may be executed at another machine, serializing is very usual. And sometimes, i find it is also interesting how Java's boxing and unboxing work.
+
+This routine will always work:
+
+    long l = ...;
+    Long boxedLong = l;
+
+But how about this?
+    
+    Long boxedLong = ...;
+    long l = boxedLong;
+
+Yes, as you might expect, it may throw `NullPointerException`. Let's play with it:
+
+    long l = (Long) null;
+    java.lang.NullPointerException
+
+It is not fun. Really. For primitive-in-boxed object, we may want to use `itsTypeValue`. But in fact, you can't do that with Long. Meanwhile, you can do that with Boolean.
+
+    long l = ((Long) null).longValue();
+    java.lang.NullPointerException
+    
+    long l = new Long(null).longValue();
+    java.lang.NumberFormatException: null
+    
+    new Boolean(null).booleanValue();
+    false
+
+What really happened to those? I don't know.
+
+## if not null and not null
+
+Sometimes, my flawless code merely run into this horrible lengthy operators:
+
+    if (provider != null && provider.getGlobalInfo() != null) {
+        InfoBase globalInfo = provider.getGlobalInfo();
+        doSomethingWith(globalInfo);
+    }
+
+Well... what if i have something longer than that? Simply add null check before `doSomethingWith(that)`!
+
+    if (provider != null && provider.getProviderCoordinate() != null && provider.getProviderCoordinate().getLatidudeBase() != null ) {
+        Coordinate c = provider.getProviderCoordinate().getLatidudeBase();
+        doSomethingWith(globalInfo);
+    }
+
+Well.. still too long. **You don't really need to get into that detail.** Take care of your object's contract. Why don't we give a default value instead of null?
+
+    class ProviderBase {
+      InfoBase globalInfo;
+      InfoBase getGlobalIInfo() {
+        if (globalInfo == null) {
+          return InfoFactory.getDefaultInfo();
+        }
+        return globalInfo;
+      }
+    }
+
+But still, **if null is expected, then handle it with a better way.** Just because i hate NPE, it is just better to give default value because most of the time null data is caused by serialization of not-yet-completed data model migration. You might have a better way other than default value (like, Annotation?), but you get the idea.
+
+[JavaRepl]: https://github.com/albertlatacz/java-repl
