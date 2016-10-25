@@ -95,4 +95,4 @@ menghasilkan exception, yang ditangkap, dan diabaikan.
 
 Saya rubah kode asli agar menangkap exception dan mencetaknya. Beriktu hasilnya:
 
-![Recursion](/images/post/spreadsheet-js-too-much-recursion.png)
+![Recursion](/images/post/spredsheet-js-too-much-recursion.png)
