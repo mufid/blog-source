@@ -73,4 +73,26 @@ Jadi, sebenarnya yang melakukan dependency resolution adalah `eval` itu sendiri.
 Program ini tidak benar-benar membuat *dependency graph* seperti yang
 saya bayangkan sebelumnya.
 
+Sebagai contoh, ada formula `=A9*Math.cos(B2)`. Yang terjadi adalah Javascript
+`eval` akan mengevaluasi `A9 * Math.cos(B2)` ke dalam sel tersebut. `Math.cos`
+adalah fungsi bawaan Javascript sehingga tidak perlu dipertanyakan. Bagaimana
+dengan A9 dan B2? Dua variabel tersebut adalah property dalam objek `DATA`
+yang dapat diakses tanpa mengetikkan `DATA` berkat idiom [with](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with). Apa nilai A9 dan B2? Belum tahu. Akan tetapi,
+karena A9 dan B2 itu sendiri merupakan property yang memiliki getter sendiri,
+maka kemudian `eval` akan mengeksekusi `DATA.A9`  dan `DATA.B2` -- yang mana
+di dalam property tersebut akan melakukan `eval` lagi jika diawali dengan `=`.
 
+Bagaimana jika ada *circular reference*? Ini diakali dengan *try-catch*
+sederhana berikut:
+
+    INPUTS.forEach(function(elm) { try { elm.value = DATA[elm.id]; } catch(e) {} });
+
+Jika terdapat `circular reference`, call-stack akan menjadi sangat panjang.
+Bayangkan B2 menggunakan nilai dari A1 dan A1 menggunakan nilai dari B2.
+Akan terjadi sebuah pemanggilan fungsi `getter` terhadap dua sel berbeda
+yang tidak ada habisnya. Ketika call stack sangat panjang, interpreter akan
+menghasilkan exception, yang ditangkap, dan diabaikan.
+
+Saya rubah kode asli agar menangkap exception dan mencetaknya. Beriktu hasilnya:
+
+![Recursion](/images/post/spreadsheet-js-too-much-recursion.png)
