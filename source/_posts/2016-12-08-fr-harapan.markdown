@@ -159,4 +159,4 @@ mudah-mudahan rasa goyang-goyang ini segera hilang.
 ### Eh, ada satu lagi!
 
 Peentar lagi hiring sekarang. Kita menggunakan Rails di frontend dan Java di backend. Langsung
-saja lihat Joel Test nya Peentar di [Peentar Career](http://peentar.id/career).
+saja lihat Joel Test nya Peentar di [Peentar Career](http://peentar.id/career?ref=wazaundtechnik).
