@@ -54,7 +54,7 @@ Ya, itu agak satir *sih,* intinya ada persepsi di kalangan pengguna internet bah
 
 /huft
 
-Menurut saya, **ini wajar.** Ibarat manusia, mungkin kita masih anak 17an yang labil sekali dan meledak-ledak. Ya, kita baru saja mendapatkan sesuatu yang bernama internet. *Hey internet sudah lama loh, 1990an awal juga udah ada.* Ya, tapi **dulu pengguna internet masih dalam kalangan terbatas.** Sekarang, sudah lima belas persen. Bahkan di kota besar, [pengguna internet sudah mencapai tiga puluh persen dari populasi]. ([mirror])
+Menurut saya, **ini wajar.** Ibarat manusia, mungkin kita masih anak umur tujuh belas tahunan yang labil sekali dan meledak-ledak. Ya, kita baru saja mendapatkan sesuatu yang bernama internet. *Hey internet sudah lama loh, 1990an awal juga udah ada.* Ya, tapi **dulu pengguna internet masih dalam kalangan terbatas.** Sekarang, sudah lima belas persen. Bahkan di kota besar, [pengguna internet sudah mencapai tiga puluh persen dari populasi]. ([mirror])
 
 ![Pengguna Internet di Jawa](/images/post/internet-jakarta.png)
 
