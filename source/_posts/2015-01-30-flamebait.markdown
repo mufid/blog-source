@@ -54,16 +54,18 @@ Ya, itu agak satir *sih,* intinya ada persepsi di kalangan pengguna internet bah
 
 /huft
 
-Menurut saya, **ini wajar.** Ibarat manusia, mungkin kita masih anak 17an yang labil sekali dan meledak-ledak. Ya, kita baru saja mendapatkan sesuatu yang bernama internet. *Hey internet sudah lama loh, 1990an awal juga udah ada.* Ya, tapi **dulu pengguna internet masih dalam kalangan terbatas.** Sekarang, sudah lima belas persen. Bahkan di kota besar, [pengguna internet sudah mencapai tiga puluh persen dari populasi].
+Menurut saya, **ini wajar.** Ibarat manusia, mungkin kita masih anak 17an yang labil sekali dan meledak-ledak. Ya, kita baru saja mendapatkan sesuatu yang bernama internet. *Hey internet sudah lama loh, 1990an awal juga udah ada.* Ya, tapi **dulu pengguna internet masih dalam kalangan terbatas.** Sekarang, sudah lima belas persen. Bahkan di kota besar, [pengguna internet sudah mencapai tiga puluh persen dari populasi]. ([mirror])
 
 ![Pengguna Internet di Jawa](/images/post/internet-jakarta.png)
 
 Tapi sampai kapan kita akan menemui flame bait seperti ini?
 
-Entahlah. Mungkin, sepuluh tahun lagi?
+Entahlah. Berkaca pada perkembangan internet di US dari grafik di atas dan beberapa fakta sejarah *internet culture*, mungkin, kita harus menghadapi ini sampai sepuluh tahun lagi?
 
 Apa yang bisa kita perbuat untuk mengurangi flamebait?
 
-Entahlah. Kami pengguna internet sejak lama dan tidak tahu. [Youtube membuat komentar harus dibuat oleh manusia yang menampakkan jati dirinya.](http://www.theguardian.com/technology/2013/nov/26/youtube-spam-comments-google-plus) Mungkin, Anda memiliki cara yang lebih baik?
+Entahlah. Kami pengguna internet sejak lama dan tidak tahu. Jika Anda ingin melakukan studi banding, [Youtube membuat komentar harus dibuat oleh manusia yang menampakkan jati dirinya.](http://www.theguardian.com/technology/2013/nov/26/youtube-spam-comments-google-plus). Mungkin, Anda memiliki cara yang lebih baik?
 
 [pengguna internet sudah mencapai tiga puluh persen dari populasi]: http://apjii.or.id/v2/upload/Laporan/Profile%20of%20Indonesian%20Internet%20Users%202012%20(ENGLISH).pdf
+
+[mirrpr]: http://fs.skyandmurmur.com/apjii/Profile%20of%20Indonesian%20Internet%20Users%202012%20%28ENGLISH%29.pdf
