@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Internet Positif, DNSCrypt, dan Internet yang Terkesan Melambat"
-date: 2017-02-07 15:30
+date: 2017-02-12 15:30
 comments: true
 lang: id
 ---
