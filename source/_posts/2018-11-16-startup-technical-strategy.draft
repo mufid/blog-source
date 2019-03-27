@@ -15,13 +15,26 @@ memaparkan strategi-strategi yang pernah kami coba.
 
 ## 1. Membangun Arahan Perusahaan dan Perencanaan Keuangan
 
-Dalam perusahaan manapun, keuangan merupakan hal yang utama. Ada dua strategi
-dalam perencanaan ini: mulai dari arahan dulu, atau mulai dari keuangan dulu.
-
-Semisal, arahan sudah ditentukan yaitu membuat MVP di 6 bulan pertama. Setelah
-kita mengetahui arahan, kita dapat mengetahui 
+Dalam perusahaan manapun, keuangan merupakan hal yang utama. Akan tetapi, ini
+agak sulit karena 
 
 ## 2. Pembangunan
+
+**Penerapan: Peningkatan Bertahap.** Dalam banyak dokumen, ini sering disebut
+*capacity planning,* tetapi kami menyederhanakan menjadi tiga bagian:
+
+- Reliability: apakah di masa depan sistem tetap hidup, meski kita tidak
+  melakukan operasi apapun? Apakah sistem dapat mati tiba-tiba, meski tidak
+  ada permintaan yang melonjak tiba-tiba?
+- Scalability: seberapa besar sistem saat ini dapat menangani permintaan?
+  Jika terjadi lonjakan, berapa maksimal permintaan?
+- Maintainability: andai kita mau menambah fitur baru, seberapa mudah fitur
+  tersebut ditambah? Apakah fitur tersebut akan merusak fitur lainnya?
+  Bagaimana **coupling** dari sistem tersebut?
+
+Setiap perencanaan, seyogyanya ada 
+
+### Pengukuran
 
 ### A. Membuat dari awal
 
@@ -32,3 +45,8 @@ kita mengetahui arahan, kita dapat mengetahui
 ### D. Menyerahkan ke Vendor
 
 ## 3. Maintenance
+
+Kode pastinya tidak luput dari galat. Bagaimana ketika galat terjadi?
+
+## Apendiks: Peran Agile
+
