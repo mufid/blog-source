@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails Static Router
-date: 2019-28-09 11:34
+date: 2019-09-28 15:34
 comments: true
 categories:
 lang: en
