@@ -17,7 +17,7 @@ Then I found following [StackOverflow question](https://stackoverflow.com/questi
 
 ![Stackoverflow Question](/images/post/rails-static-router-1.png)
 
-The first answer pointing me to use [High Voltage](https://github.com/thoughtbot/high_voltage)
+The first answer pointed me to use [High Voltage](https://github.com/thoughtbot/high_voltage)
 gem. However, I think it is overkill. I don't need to serve dozens of page.
 
 I then opened another [Stackoverflow Question](https://stackoverflow.com/questions/5631145/routing-to-static-html-page-in-public/43183300#43183300):
