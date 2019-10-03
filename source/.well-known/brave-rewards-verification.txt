@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mufid.github.io
+Token: 5bac33363407b9cb0de088c70053ed4fada5b456286a1db6c2bb54714e95a8be 
