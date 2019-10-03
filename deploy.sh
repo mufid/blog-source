@@ -10,6 +10,7 @@ fi
 bundle exec rake generate
 rm -rf gh/blog
 cp -r public/* gh
+cp -r source/.well-known gh
 cd gh
 
 git config user.name "Mufid - Codeship Deployer"
