@@ -14,6 +14,8 @@ Cara-cara:
 - Restore data ke mesin baru
 - Done
 
+<!-- more -->
+
 ## Menyiapkan Mesin Baru
 
 Sebelum memulai, pastikan DNS sudah propagate ke mesin baru.
