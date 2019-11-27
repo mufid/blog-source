@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memindahkan Data Wordpress Pada Apache dan Ubuntu 16.04
-date: 2019-09-28 15:34
+date: 2019-11-27 15:34
 comments: true
 categories:
 lang: id
