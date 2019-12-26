@@ -1,0 +1,24 @@
+---
+layout: post
+title: Melakukan Analisis Log Nginx dengan GoAccess
+date: 2019-12-26 06:28
+comments: true
+categories:
+lang: id
+---
+
+Dokumen ini valid saat waktu penulisan. Saya menggunakan Ubuntu 18.04 dengan GoAccess versi 1.3.
+
+Lakukan instalasi GoAccess: [[sumber](https://goaccess.io/download)]
+
+    echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/goaccess.list
+    wget -O - https://deb.goaccess.io/gnugpg.key | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get install goaccess
+    
+Buka hasilnya [[sumber](https://stackoverflow.com/q/39232741/518091)]
+
+    cd /var/log/nginx
+    zcat -f access.log* | goaccess --log-format=COMBINED
+
+Voila, selesai!
