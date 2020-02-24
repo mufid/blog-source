@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Masuk dengan MFA pada antarmuka AWS CLI
-date: 2019-12-26 06:28
+date: 2020-02-24 05:28
 comments: true
 categories:
 lang: id
