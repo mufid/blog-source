@@ -1,0 +1,70 @@
+---
+layout: post
+title: RAID untuk Kebutuhan Pribadi
+date: 2020-05-27 05:28
+comments: true
+categories:
+lang: id
+---
+
+![RAID](/images/post/raid.png)
+
+Saya sudah lama menggunakan RAID 1 untuk komputer pribadi saya. Sudah sejak 2017. Empat tahun lebih.
+Sejauh ini saya luar biasa puas dengan hasilnya. Mengapa saya memilih RAID 1 yang notabene harganya
+menjadi dua kali lipat?
+
+Hal ini karena komputer merupakan aset yang sangat berharga bagi saya.
+Melakukan riset dan eksperimen pribadi, bermain, hingga hiburan saya lakukan semuanya di komputer
+Saya. Jika hard disk rusak, saya tidak bisa menggunakan komputer Saya. Pernah beberapa kali hard
+disknya rusak. Saya haru melakukan pemasangan ulang Windows dan melakukan pemasangan ulang semua
+perangkat lunak yang saya butuhkan. Seluruh proses penyelamatan memakan waktu 2 hari lebih! Seluruh
+akhir pekan saya didgunakan hanya untuk penyelamatan dan pemasangan. Tidak efisien.
+
+Hard Disk saya rusak karena banyak hal. Biasanya karena masalah kelistrikan dan umur. Namun saya mencurigai
+kerusakannya di kelistrikan. Biasanya, Windows tidak mau boot setelah listrik padam secara tiba-tiba dan
+komputer sedang dinyalakan. Solusi termudahnya adalah beli UPS, tetapi UPS hanya menyelesaikan masalah
+hard disk yang rusak karena listrik padam tiba-tiba. Tidak menyelesaikan masalah karena umur atau hal lainnya.
+RAID Mirroring menyelesaikan masalah "masa iya kedua hard disk rusak berbarengan untuk sektor yang sama."
+
+Saya menggunakan RST atau Intel Rapid Storage — fungsi RAID bawaan dari perangkat keras yang saya miliki.
+Pertimbangannya saya menggunakan perangkat keras RAID adalah sebagai berikut:
+
+- Dukungan driver native dari untuk Windows Vista ke atas
+- Tidak perlu konfigurasi apapun di perangkat lunak dan OS
+- Instalasi yang mudah, hanya perlu konfigurasi di BIOS
+
+Adapun salah satu hal yang kurang menyenangkan dalam penggunaan RAID ini adalah kewajiban untuk menjalan RAID
+verification saat listrik padam tiba-tiba. Pada hard disk dengan kapasitas 3 TB yang saya miliki,
+proses verifikasi membutuhkan waktu hingga delapan jam lebih! Meski bisa kita lewati, proses
+verifikasi sudah terjadi saat driver dimuat. Artinya, proses verifikasi sudah dimulai sejak Windows
+Boot. Jadi, ketika listrik padam, penghidupan komputer selanjutnya akan memperlambat proses boot.
+Hal ini karena boot, startup, dan verifikasi RAID terjadi bersamaan. Kita baru bisa mengabaikan
+proses verifikasi ketika menjalankan UI Intel Rapid Storage — yaitu saat sudah login.
+
+Kekurangan lainnya adalah tidak bisa menambah array dengan mudah. Um, ini bukan hanya masalah RAID, sih.
+Ini masalah yang akan dihadapi kalau kita memiliki lebih dari satu disk. Tanpa RAID pun, menambah disk
+berarti sudah menambah mount point.
+
+![RAID](/images/post/raid-verify.png)
+
+Tentu saja untuk build selanjutnya saya akan menggunakan RAID 1 lagi. Mungkin juga saya akan pertimbangkan
+RAID 10. Yang pasti mirroring ini membantu kehidupan saya sekali. Tidak perlu takut bad sector dan hard
+disk mati tiba-tiba.
+
+Saya tidak mempertimbangkan RAID 5 atau RAID 6 karena terlalu boros untuk pengguna rumahan seperti Saya.
+Dua disk saja sudah terlalu banyak, apalagi 3 disk atau malah 4 disk. Memang RAID 5 dan RAID 6 menawarkan
+kecepatan yang lebih tinggi. Akan tetapi, saya akan memilih M.2 SSD jika alasannya adalah kecepatan.
+Untuk availability yang tinggi seperti RAID 1, kita bisa menggunakan skenario sebagai berikut:
+
+- SSD digunakan untuk sistem
+- Setup RAID 1 untuk 2 disk
+- Backup full SSD ke disk di RAID 1
+- Andai SSD rusak tiba-tiba, tinggal restore image dari disk di RAID 1 ke SSD.
+
+Bagaimana dengan NAS?
+
+Sepertinya NAS adalah hal yang berbeda — terlepas dukungan RAID yang ditawarkan oleh NAS.
+NAS tidak bisa digunakan untuk menyimpan berkas sistem. Meski ada yang menawarkan Network
+Boot dari NAS, itu tidak memenuhi kebutuhan rumahan seperti saya. Latency network boot terlalu
+tinggi. Lagipula, NAS memindahkan risiko fisik dari komputer saya ke luar — yang mana saya juga tidak butuh.
+Terlalu banyak fitur-fiturnya yang mubazir.
