@@ -26,7 +26,7 @@ berapa gaji kita. Tayangan di bawah adalah salah satu
 contoh utas di papan gambar. Saya tidak tampilkan ID
 dari papan gambar ini karena mungkin terlalu "vulgar".
 
-![/images/post/pay-inequality.png](Pembahasan gaji di salah satu papan gambar)
+![Pembahasan gaji di salah satu papan gambar](/images/post/pay-inequality.png)
 
 Kalau kita bisa berbohong di papan gambar tanpa nama,
 ada juga upaya untuk membahas gaji di Twitter. Dulu,
