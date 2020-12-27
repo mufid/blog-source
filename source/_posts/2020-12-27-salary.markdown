@@ -84,3 +84,23 @@ Jika kita rela memberikan data keuangan yang paling rahasia
 kepada berbagai macam institusi finansial, mengapa kita
 juga tidak berbagi data keuangan kita untuk memberikan
 sedikit tambahan keberuntungan hidup kepada orang lain?
+
+Ahh tapi kan dengan mengirim slip gaji belum tentu
+datanya akurat? Mungkin perlu saya perjelas: akan lebih
+baik jika kita berani berbagi informasi gaji dengan
+data yang akurat. Di sana ada satu yang jelas: data
+yang dikirimkan akurat. Tidak ada kebohongan di dalamnya.
+Ya kalaupun ada, itu itikad buruk. Siapapun juga bisa
+memalsukan slip gaji agar lolos KPR.
+
+Tapi kalau pun mengirimkan data yang sahih, bukankah
+masih mungkin datanya condong ke persentil rendah atau
+persentil tinggi? Memang pasti dapat median? Ya bisa saja.
+Lebih lanjut lagi, bisa saja gaji developer [bimodal](https://danluu.com/bimodal-compensation/).
+Sebagaimana gaji lawyer di Amerika Serikat, bimodal.
+
+Membingungkan? Oh iya jelas, namanya juga curhatan
+tidak terstruktur. Singkatnya, tolonglah ada semacam
+platform seperti levels.fyi di Indonesia. Masa iya yang
+punya data gaji yang akurat hanya pekerja bank dan
+sales kredit? :D
