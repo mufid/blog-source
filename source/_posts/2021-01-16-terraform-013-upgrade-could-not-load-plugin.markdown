@@ -23,7 +23,7 @@ masalah berikut:
 ![Tangkapan Layar Could Not Load Plugin](/images/post/terraform-could-not-load-plugin.png)
 
 Wow... kenapa ya? Selidik punya selidik, saya menemui laman
-GitHub berikut: ![https://github.com/hashicorp/terraform/issues/26104](https://github.com/hashicorp/terraform/issues/26104).
+GitHub berikut: [https://github.com/hashicorp/terraform/issues/26104](https://github.com/hashicorp/terraform/issues/26104).
 Tampaknya saya harus menjalankan perintah replace-provider karena Terraform
 menggunakan struktur URL yang berbeda untuk provider registry mereka.
 Pada laman GitHub tersebut, ditampilkan bahwa dia perlu mengganti registry URL
